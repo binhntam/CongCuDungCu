@@ -41,7 +41,9 @@ namespace CongCuDungCu.Controllers
         //    //var sttct = !string.IsNullOrEmpty(Request.Params["idSuCo"]) ? int.Parse(Request.Params["idSuCo"]) : 0;
         //    return DevExpressHelper.GetUrl(new { Controller = "Report", Action = "rpXuatKho1Phieu" });
         //}
-
+        //**//
+        //code them 1 chuc nang cho version 3.0 --> 3.1
+        //***/
     }
 }
 

@@ -1,0 +1,228 @@
+﻿@model CongCuDungCu.Models.EditableChungTu
+
+@{
+    ViewBag.Title = "FormEdit_ThanhLy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    Html.EnableClientValidation();
+}
+
+@using (Html.BeginForm("FormEdit_ThanhLy", "NhapDuLieu", FormMethod.Post, new { @class = "details_form" }))
+{
+    @Html.Hidden("STTCT")
+    <div class="details_form">
+        <div class="line">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Số chứng từ:";
+                settings.AssociatedControlName = "SoCT";
+            }
+        ).GetHtml()
+            @Html.DevExpress().TextBox(
+            settings =>
+            {
+                settings.Name = "SoCT";
+                settings.ControlStyle.CssClass = "editor";
+              settings.ReadOnly = true;
+                settings.ControlStyle.BackColor = System.Drawing.Color.WhiteSmoke;
+                settings.Width = 195;
+            }
+        ).Bind(Model.SoCT).GetHtml()
+        </div>
+
+        <div class="line">
+            @Html.DevExpress().Label(settings =>
+                {
+                    settings.ControlStyle.CssClass = "label";
+                    settings.Text = "Ngày viết phiếu";
+                    settings.AssociatedControlName = "Ngayvietphieu";
+                }
+
+             ).GetHtml()
+            @Html.DevExpress().DateEdit(
+            settings =>
+            {
+                settings.Name = "Ngayvietphieu";
+                settings.ControlStyle.CssClass = "texter";
+                settings.Date = new DateTime(1984, 06, 14);
+                settings.Properties.DisplayFormatString = "dd/MM/yyyy";
+                settings.Properties.EditFormatString = "dd/MM/yyyy";  
+            }
+        ).Bind(Model.Ngayvietphieu).GetHtml()
+            @Html.ValidationMessageFor(model => model.Ngayvietphieu, null, new { @class = "validator" })
+
+        </div>
+
+        @*<div class="line">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.AssociatedControlName = "Maloaiphieu";
+                settings.Text = "Loại phiếu:";
+            }
+        ).GetHtml()
+            @Html.DevExpress().ComboBox(
+            settings =>
+            {
+                settings.Name = "Maloaiphieu";
+                settings.ControlStyle.CssClass = "editor";
+                settings.Properties.TextField = "Tenloaiphieu";
+                settings.Properties.ValueField = "Maloaiphieu";
+                settings.Properties.ValueType = typeof(string);
+                settings.Width = 195;
+            }
+          ).BindList(CongCuDungCu.Models.CCDCDataProvider.DMLoaiphieus()).Bind(Model.Maloaiphieu).GetHtml()
+            @Html.ValidationMessageFor(model => model.Maloaiphieu, null, new { @class = "validator" })
+        </div>*@
+
+        <div class="line">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Nhập từ:";
+                settings.AssociatedControlName = "Tu";
+            }
+        ).GetHtml()   
+            @Html.DevExpress().ComboBox(
+            settings =>
+            {
+                settings.Name = "Tu";
+                settings.SelectedIndex = 0;
+                settings.ControlStyle.CssClass = "editor";
+                settings.Properties.TextField = "Tendonvi";
+                settings.Properties.ValueField = "Tendonvi";
+                settings.Properties.ValueType = typeof(string);
+
+                settings.Width = 250;
+            }
+ ).BindList(CongCuDungCu.Models.CCDCDataProvider.DMDonViByUsers2(@User.Identity.Name)).Bind(Model.Tu).GetHtml() 
+         
+            @Html.ValidationMessageFor(model => model.Tu, null, new { @class = "validator" })
+
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Đến:";
+                settings.AssociatedControlName = "Den";
+
+            }
+        ).GetHtml()
+            @Html.DevExpress().TextBox(
+            settings =>
+            {
+                settings.Name = "Den";
+                settings.ControlStyle.CssClass = "editor";
+                settings.Width = 250;
+                settings.Text = "Kho Công ty";
+            }
+         ).Bind(Model.Den).GetHtml()
+            @Html.ValidationMessageFor(model => model.Den, null, new { @class = "validator" })
+
+        </div>
+
+        @*<div class="line">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Người viết:";
+                settings.AssociatedControlName = "Nguoithuchien";
+            }
+        ).GetHtml()
+            @Html.DevExpress().ComboBox(
+            settings =>
+            {
+                settings.Name = "Nguoithuchien";
+                settings.SelectedIndex = 0;
+                settings.ControlStyle.CssClass = "editor";
+                settings.Properties.TextField = "Nguoithuchien";
+                settings.Properties.ValueField = "Nguoithuchien";
+                settings.Properties.ValueType = typeof(string);
+                settings.Width = 250;
+            }
+).BindList(CongCuDungCu.Models.CCDCDataProvider.GetFullName_ByUserName(HttpContext.Current.User.Identity.Name)).Bind(Model.Nguoithuchien).GetHtml()
+        
+            @Html.ValidationMessageFor(model => model.Nguoithuchien, null, new { @class = "validator" })
+
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Người giao:";
+                settings.AssociatedControlName = "Nguoigiaonhan";
+            }
+        ).GetHtml()
+            @Html.DevExpress().TextBox(
+            settings =>
+            {
+                settings.Name = "Nguoigiaonhan";
+                settings.ControlStyle.CssClass = "editor";
+                settings.Width = 250;
+            }
+           ).Bind(Model.Nguoigiaonhan).GetHtml()
+            @Html.ValidationMessageFor(model => model.Nguoigiaonhan, null, new { @class = "validator" })
+
+        </div>*@
+
+
+        <div class="line">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+                settings.Text = "Lý do:";
+                settings.AssociatedControlName = "Lydo";
+            }
+        ).GetHtml()
+            @Html.DevExpress().TextBox(
+            settings =>
+            {
+                settings.Name = "Lydo";
+                settings.ControlStyle.CssClass = "editor";
+                settings.Width = 620;
+            }
+           ).Bind(Model.Lydo).GetHtml()
+            @Html.ValidationMessageFor(model => model.Lydo, null, new { @class = "validator" })
+        </div>
+
+        <div class="line1">
+            @Html.DevExpress().Label(
+            settings =>
+            {
+                settings.ControlStyle.CssClass = "label";
+            }
+        ).GetHtml()
+            @Html.DevExpress().Button(
+            settings =>
+            {
+                settings.Name = "btnUpdate";
+                settings.ControlStyle.CssClass = "button";
+                settings.Text = "Cập nhật";
+                settings.UseSubmitBehavior = true;
+            }
+        ).GetHtml()
+            @Html.DevExpress().Button(
+            settings =>
+            {
+                settings.Name = "btnCancel";
+                settings.ControlStyle.CssClass = "button";
+                settings.Text = "Trở về";
+                settings.ClientSideEvents.Click = "function(s, e){ document.location='" + DevExpressHelper.GetUrl(new { Controller = "NhapDuLieu", Action = "PhieuThanhLy" }) + "'; }";
+            }
+        ).GetHtml()
+        </div>
+    </div>
+    
+    
+  @Html.Partial("menuThanhLy")
+  
+}
+
+

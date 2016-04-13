@@ -1,0 +1,11 @@
+<Themes>
+  
+    <ThemeGroup Title="Thông tin" Name="Misc" Float="Left">       
+        <Theme Title="Thông tin cá nhân" Key="PersonalInfomation" Name="PlasticBlue" SpriteCssClass="ThemePlasticBlueImage"></Theme>
+        <Theme Title="Thay đổi mật khẩu" Key="ChangePassword" Name="RedWine" SpriteCssClass="ThemeRedWineImage"></Theme>
+        <Theme Title="Cập nhật người ký các biểu mẫu" Key="Sign" Name="SoftOrange" SpriteCssClass="ThemeSoftOrangeImage"></Theme>
+        </ThemeGroup>
+ <ThemeGroup Title="Đăng xuất" Name="Mobile" Float="Right">
+        <Theme Title="Đăng xuất" Key="LogOff" Name="Moderno" SpriteCssClass="ThemeModernoImage"></Theme>
+    </ThemeGroup>
+</Themes>

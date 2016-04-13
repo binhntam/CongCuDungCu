@@ -1,0 +1,310 @@
+﻿@using CongCuDungCu.Models
+@{
+    var grid = Html.DevExpress().GridView(
+    settings =>
+    {
+        settings.Name = "gridViewCCDCDetail";
+        //   settings.KeyFieldName = "MaCCDC";
+        settings.KeyFieldName = "STTDMCCDC";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.CallbackRouteValues = new { Controller = "DanhSach", Action = "DMCCDCPartial" };
+
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "DanhSach", Action = "UpdateCCDCPartial" };
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "DanhSach", Action = "NewCCDCPartial" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "DanhSach", Action = "DeleteCCDCPartial" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsPopup.EditForm.Width = 600;
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.Width = 85;
+        settings.CommandColumn.ShowEditButton = true;
+        // settings.CommandColumn.ShowNewButton = true;
+        settings.CommandColumn.ShowNewButtonInHeader = true;
+     
+        settings.SettingsCommandButton.EditButton.Text = "Sửa";
+        settings.SettingsCommandButton.NewButton.Text = "Thêm mới";
+        // settings.CommandColumn.ShowDeleteButton = true;
+     //   settings.SettingsCommandButton.DeleteButton.Text = "Xóa";
+     //   settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.Font.Bold = true;
+
+        // settings.Styles.GroupRow.Font.Bold = true;
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "STTDMCCDC";
+            col.Caption = "STTDMCCDC";
+            // col.Visible = false;
+            col.Width = 25;
+            col.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "MaCCDC";
+            col.Caption = "Mã CCDC";
+            col.Width = 85;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "TenCCDC";
+            column.Caption = "Tên CCDC";
+            column.CellStyle.Font.Bold = true;
+        });
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "Chitiet";
+            col.Caption = "Chi tiết";
+            col.Width = 250;
+        });
+        //phân trang
+        settings.SettingsPager.Position = System.Web.UI.WebControls.PagerPosition.Bottom;
+        settings.SettingsPager.FirstPageButton.Visible = true;
+        settings.SettingsPager.LastPageButton.Visible = true;
+        settings.SettingsPager.PageSize = 24;
+        //lọc header
+        settings.Settings.ShowFilterRow = true;
+        settings.Settings.ShowFilterRowMenu = true;
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowClearFilterButton = true;
+        //SUMMARY
+        settings.Settings.ShowFooter = true;
+        settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Count, "TenCCDC").DisplayFormat = "Tổng: {0:0,0}";
+
+        settings.SetEditFormTemplateContent(c =>
+        {
+            var tram = ViewData["EditableCCDC"] != null ? ViewData["EditableCCDC"] : c.DataItem;
+            ViewContext.Writer.Write("<div class='details_form'>");
+            /*MaCCDC*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Mã CCDC: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               )
+               .Render();
+            Html.DevExpress().TextBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "MaCCDC";
+                textBoxSettings.ControlStyle.CssClass = "editor";
+
+            }
+            )
+           .Bind(DataBinder.Eval(tram, "MaCCDC"))
+           .Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+            /*TenCCDC*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Tên CCDC: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               )
+               .Render();
+            Html.DevExpress().TextBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "TenCCDC";
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Width = 250;
+            }
+           )
+           .Bind(DataBinder.Eval(tram, "TenCCDC"))
+           .Render();
+            /*DVT*/
+           
+          
+            Html.DevExpress().ComboBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Madvt";
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Properties.ValueField = "Madvt";
+                textBoxSettings.Properties.TextField = "Tendvt";
+                textBoxSettings.Properties.ValueType = typeof(string);
+            
+            }
+           ).BindList(CCDCDataProvider.DMDvts())
+           .Bind(DataBinder.Eval(tram, "Madvt"))
+           .Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+            /*NoiSX*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Nơi sản xuất: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               )
+               .Render();
+            Html.DevExpress().ComboBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Manoisx";
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Properties.ValueField = "Manoisx";
+                textBoxSettings.Properties.TextField = "Tennoisx";
+                textBoxSettings.Properties.ValueType = typeof(string);
+            }
+       ).BindList(CCDCDataProvider.DMNoiSXs())
+       .Bind(DataBinder.Eval(tram, "Manoisx"))
+       .Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+            /*Maloaiccdc*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Loại CCDC: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               )
+               .Render();
+            Html.DevExpress().ComboBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Maloaiccdc";
+                textBoxSettings.SelectedIndex = 0;
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Properties.TextField = "Tenloaiccdc";
+                textBoxSettings.Properties.ValueField = "Maloaiccdc";
+                textBoxSettings.Properties.ValueType = typeof(string);
+                textBoxSettings.Width = 250;
+            }
+       ).BindList(CCDCDataProvider.DMLoaiccdcs())
+       .Bind(DataBinder.Eval(tram, "Maloaiccdc"))
+       .Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+            /*Tenloaits*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Loại tài sản: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               )
+               .Render();
+            Html.DevExpress().ComboBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Maloaits";
+                textBoxSettings.SelectedIndex = 0;
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Properties.TextField = "Tenloaits";
+                textBoxSettings.Properties.ValueField = "Maloaits";
+                textBoxSettings.Properties.ValueType = typeof(string);
+                textBoxSettings.Width = 250;
+            }
+       ).BindList(CCDCDataProvider.DMLoaiTs())
+       .Bind(DataBinder.Eval(tram, "Maloaits"))
+       .Render();
+            /*****/
+       //     ViewContext.Writer.Write("</div>");
+       //     /*Tenloaits*/
+       //     ViewContext.Writer.Write("<div class='line2'>");
+       //     Html.DevExpress().Label(
+       //        labelSettings =>
+       //        {
+       //            labelSettings.Text = "Nguồn vốn: ";
+       //            labelSettings.ControlStyle.CssClass = "label";
+       //        }
+       //        )
+       //        .Render();
+       //     Html.DevExpress().ComboBox(textBoxSettings =>
+       //     {
+       //         textBoxSettings.Name = "Manguonvon";
+       //         textBoxSettings.ControlStyle.CssClass = "editor";
+       //         textBoxSettings.Properties.TextField = "Tennguonvon";
+       //         textBoxSettings.Properties.ValueField = "Manguonvon";
+       //         textBoxSettings.Properties.ValueType = typeof(string);
+       //     }
+       //).BindList(CCDCDataProvider.DMNguonvons())
+       //.Bind(DataBinder.Eval(tram, "Manguonvon"))
+       //.Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+            /*Chitiet*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+               labelSettings =>
+               {
+                   labelSettings.Text = "Chi tiết: ";
+                   labelSettings.ControlStyle.CssClass = "label";
+               }
+               ).Render();
+            Html.DevExpress().TextBox(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Chitiet";
+                textBoxSettings.ControlStyle.CssClass = "editor";
+                textBoxSettings.Width = 400;
+            }
+            )
+            .Bind(DataBinder.Eval(tram, "Chitiet"))
+            .Render();
+            /*****/
+            ViewContext.Writer.Write("</div>");
+
+            /*Ghichu*/
+            ViewContext.Writer.Write("<div class='line2'>");
+            Html.DevExpress().Label(
+                labelSettings =>
+                {
+                    labelSettings.Text = "Ghi chú:";
+                    labelSettings.ControlStyle.CssClass = "label";
+                }
+            )
+            .Render();
+            Html.DevExpress().Memo(textBoxSettings =>
+            {
+                textBoxSettings.Name = "Ghichu";
+                textBoxSettings.ControlStyle.CssClass = "label";
+                textBoxSettings.Width = 400;
+            }
+            )
+            .Bind(DataBinder.Eval(tram, "Ghichu"))
+            .Render();
+
+            ViewContext.Writer.Write("</div>");
+
+            ViewContext.Writer.Write("<div class='line3'>");
+            ViewContext.Writer.Write("<div style=\"overflow: hidden\"><div style=\"padding: 3px 0px 15px 17px; float right;\">");
+            Html.DevExpress().Button(
+            btnSettings =>
+            {
+                btnSettings.Name = "btnUpdategridViewCCDCDetail";
+                btnSettings.ControlStyle.CssClass = "button";
+                btnSettings.Text = "Cập nhật";
+                //   btnSettings.Images.Image.Url = "~/Content/Images/accepted_48.png";
+                btnSettings.ImagePosition = ImagePosition.Left;
+                btnSettings.ClientSideEvents.Click = "function(s, e){ gridViewCCDCDetail.UpdateEdit(); }";
+            }
+            ).Render();
+            Html.DevExpress().Button(
+                btnSettings =>
+                {
+                    btnSettings.Name = "btnCancelgridViewXuatDetail";
+                    btnSettings.ControlStyle.CssClass = "button";
+                    btnSettings.Text = "Hủy";
+                    //  btnSettings.Images.Image.Url = "~/Content/Images/accepted_48.png";
+                    btnSettings.ImagePosition = ImagePosition.Left;
+                    btnSettings.ClientSideEvents.Click = "function(s, e){ gridViewCCDCDetail.CancelEdit(); }";
+                }
+            ).Render();
+            ViewContext.Writer.Write("</div></div>");
+            ViewContext.Writer.Write("</div>");
+            /*end*/
+            ViewContext.Writer.Write("</div>");
+
+        });
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

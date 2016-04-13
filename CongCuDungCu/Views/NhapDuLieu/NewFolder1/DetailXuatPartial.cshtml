@@ -1,0 +1,328 @@
+﻿@using CongCuDungCu.Models
+@{
+    var grid = Html.DevExpress().GridView(
+    settings =>
+    {
+        settings.Name = "gridViewCTChungTuNhap";
+        settings.KeyFieldName = "STTCTCT";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.CallbackRouteValues = new
+        {
+            Controller = "NhapDuLieu",
+            Action = "CTChungTuNhapPartial",
+            STTCT = ViewData["STTCT"]
+        };
+     
+        //settings.SettingsEditing.BatchUpdateRouteValues = new { Controller = "NhapDuLieu", Action = "DetailEditingModel" };
+
+        //settings.SettingsEditing.Mode = GridViewEditingMode.Batch;
+        //settings.SettingsEditing.BatchEditSettings.EditMode = GridViewBatchEditMode.Cell;
+        //settings.SettingsEditing.BatchEditSettings.StartEditAction = GridViewBatchStartEditAction.DblClick;
+
+        //settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        //settings.CommandColumn.ShowNewButtonInHeader = true;
+
+
+        settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "NhapDuLieu", Action = "UpdateChiTietPartial" };
+        settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "NhapDuLieu", Action = "NewChiTietPartial" };
+        settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "NhapDuLieu", Action = "DeleteChiTietPartial" };
+        settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        settings.SettingsPopup.EditForm.Width = 600;
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.Width = 85;
+        settings.CommandColumn.ShowEditButton = true;   
+       settings.CommandColumn.ShowNewButtonInHeader = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+      settings.SettingsCommandButton.EditButton.Text = "Sửa";
+       settings.SettingsCommandButton.NewButton.Text = "Thêm mới";       
+       settings.SettingsCommandButton.DeleteButton.Text = "Xóa";
+        settings.SettingsBehavior.ConfirmDelete = true;
+       
+        settings.CommandColumn.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.Font.Bold = true;
+
+        // settings.Styles.GroupRow.Font.Bold = true;
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "TenCCDC";
+            col.Caption = "Tên CCDC";
+            col.CellStyle.Font.Bold = true;
+        //    col.FixedStyle = GridViewColumnFixedStyle.Left;
+          //  col.Width = 600;
+        });
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "MaCCDC";
+            col.Caption = "Mã CCDC";
+            col.CellStyle.Font.Bold = true;
+            col.Width = 90;
+            col.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.Width = 60;
+            column.FieldName = "Soluong";
+            column.Caption = "Số lượng";
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+            var spinEditProperties = column.PropertiesEdit as SpinEditProperties;
+            spinEditProperties.NumberType = SpinEditNumberType.Integer;
+            spinEditProperties.MinValue = 0;
+            spinEditProperties.MaxValue = 10000;
+            //lấy bảng màu tùy chọn thủ công
+            spinEditProperties.DisplayFormatString = "{0:n1}";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.Caption = "Đ.vị tính";
+            column.FieldName = "Madvt";
+            column.Width = 65;
+            column.ColumnType = MVCxGridViewColumnType.ComboBox;
+            var comboBoxProperties = column.PropertiesEdit as ComboBoxProperties;
+            comboBoxProperties.DataSource = CCDCDataProvider.DMDvts();
+            comboBoxProperties.TextField = "Tendvt";
+            comboBoxProperties.ValueField = "Madvt";
+            comboBoxProperties.ValueType = typeof(string);
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+
+        });
+        settings.Columns.Add(column =>
+        {
+            column.Caption = "T.trạng";
+            column.FieldName = "Matinhtrang";
+            column.Width = 60;
+            column.ColumnType = MVCxGridViewColumnType.ComboBox;
+            var comboBoxProperties = column.PropertiesEdit as ComboBoxProperties;
+            comboBoxProperties.DataSource = CCDCDataProvider.DMTinhtrangs();
+            comboBoxProperties.TextField = "Tentinhtrang";
+            comboBoxProperties.ValueField = "Matinhtrang";
+            comboBoxProperties.ValueType = typeof(string);
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+
+        });
+        settings.Columns.Add(col =>
+        {
+            col.Caption = "ĐƠN GIÁ";
+            col.FieldName = "Dongia";
+            col.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+            col.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            var spinEditProperties = col.PropertiesEdit as SpinEditProperties;
+            //   spinEditProperties.NumberType = SpinEditNumberType.Integer;
+            spinEditProperties.MinValue = 0;
+            spinEditProperties.MaxValue = 100000000000;
+            spinEditProperties.DisplayFormatString = "{0:0,0}";
+            spinEditProperties.DisplayFormatInEditMode = true;
+            col.Width = 65;
+            // col.ReadOnly = true;
+        });
+
+        settings.Columns.Add(col =>
+        {
+            col.Caption = "THÀNH TIỀN";
+            col.FieldName = "ThanhTien";
+            col.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+            col.UnboundType = DevExpress.Data.UnboundColumnType.Decimal;
+            col.PropertiesEdit.DisplayFormatString = "{0:0,0}";
+            col.Width = 90;
+            //  col.ReadOnly = true;
+        });
+        //
+        settings.CustomUnboundColumnData = (sender, e) =>
+        {
+
+            if (e.Column.FieldName == "ThanhTien")
+            {
+                double SoLuong = Convert.ToDouble(e.GetListSourceFieldValue("SoLuong"));
+                double DonGia = Convert.ToDouble(e.GetListSourceFieldValue("Dongia"));
+                decimal per = 0;
+                per = decimal.Round(Convert.ToDecimal(DonGia * SoLuong), 2);
+                e.Value = per;
+            }
+
+        };
+        //phân trang
+        settings.SettingsPager.Position = System.Web.UI.WebControls.PagerPosition.Bottom;
+        settings.SettingsPager.FirstPageButton.Visible = true;
+        settings.SettingsPager.LastPageButton.Visible = true;
+        settings.SettingsPager.PageSize = 20;
+        //SUMMARY
+        //  settings.Settings.ShowFooter = true;
+        //  settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Count, "TenVTTB").DisplayFormat = "Tổng: {0:0,0}";
+        // settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Sum, "SoLuong").DisplayFormat = "{0:0,0}";
+        //SET DETAIL
+        //settings.SettingsDetail.ShowDetailRow = true;
+        //settings.SettingsDetail.AllowOnlyOneMasterRowExpanded = true;
+        settings.SetEditFormTemplateContent(c =>
+         {
+             var tram = ViewData["EditableCTChungTu"] != null ? ViewData["EditableCTChungTu"] : c.DataItem;
+             ViewContext.Writer.Write("<div class='details_form'>");
+             /*TenCCDC*/
+                 ViewContext.Writer.Write("<div class='line2'>");
+                     Html.DevExpress().Label(
+                        labelSettings =>
+                        {
+                            labelSettings.Text = "Tên CCDC: ";
+                            labelSettings.ControlStyle.CssClass = "label";
+                        }
+                        )
+                        .Render();                   
+               
+                     /*****/
+                     Html.RenderAction("GridLookupPartial", new { MaCCDC = DataBinder.Eval(c.DataItem, "MaCCDC") });
+                   //  Html.RenderAction("MultiColumnComboBoxPartial", tram);
+            
+             /*****/
+                 ViewContext.Writer.Write("</div>");
+              /*Soluong*/
+                ViewContext.Writer.Write("<div class='line2'>");
+                    Html.DevExpress().Label(
+                        labelSettings =>
+                        {
+                            labelSettings.Text = "Số lượng: ";
+                             labelSettings.ControlStyle.CssClass = "label";
+
+                        }
+                        )
+                    .Render();
+                    Html.DevExpress().SpinEdit(edtSettings =>
+                    {
+                        edtSettings.Name = "Soluong";
+                        edtSettings.ControlStyle.CssClass = "editor";
+                        edtSettings.Width = 80;
+                        edtSettings.Properties.NumberType = SpinEditNumberType.Float;
+                        edtSettings.Properties.NumberFormat = SpinEditNumberFormat.Number;
+                        edtSettings.Properties.MinValue = 0;
+                        edtSettings.Properties.MaxValue = 1000;
+
+                        // edtSettings.Properties.DisplayFormatString = "{0:0,0}";
+                        edtSettings.Properties.DisplayFormatString = " {0:n1}";
+                        edtSettings.Properties.DisplayFormatInEditMode = true;
+                    }
+                    )
+                    .Bind(DataBinder.Eval(tram, "Soluong"))
+                    .Render();
+                    ViewContext.Writer.Write("</div>");
+                /*NgaySD*/
+                    ViewContext.Writer.Write("<div class='line2'>");
+                        Html.DevExpress().Label(
+                            labelSettings =>
+                            {
+                                labelSettings.Text = "Ngày sử dụng: ";
+                                labelSettings.ControlStyle.CssClass = "label";
+                            }
+                        )
+                        .Render();
+                        Html.DevExpress().DateEdit(dateEditProperties =>
+                        {
+                            dateEditProperties.Name = "NgaySD";
+                           // dateEditProperties.EditFormat = EditFormat.Custom;
+                            // dateEditProperties.EditFormatString = "dd/MM/yyyy";
+                            dateEditProperties.ControlStyle.CssClass = "editor";
+
+                        }
+                        )
+                        .Bind(DataBinder.Eval(tram, "NgayHHBH"))
+                        .Render();
+
+                        Html.DevExpress().Label(
+                                      labelSettings =>
+                                      {
+                                          labelSettings.Text = "Hạn bảo hành: ";
+                                          labelSettings.ControlStyle.CssClass = "label";
+                                      }
+                                  )
+                                  .Render();
+                        Html.DevExpress().DateEdit(dateEditProperties =>
+                        {
+                            dateEditProperties.Name = "NgayHHBH";
+                            // dateEditProperties.EditFormat = EditFormat.Custom;
+                            // dateEditProperties.EditFormatString = "dd/MM/yyyy";
+                            dateEditProperties.ControlStyle.CssClass = "editor";
+
+                        }
+                        )
+                        .Bind(DataBinder.Eval(tram, "NgayHHBH"))
+                        .Render();
+                        ViewContext.Writer.Write("</div>");
+            /*TinhTrang*/
+            ViewContext.Writer.Write("<div class='line2'>");
+                Html.DevExpress().Label(
+                    labelSettings =>
+                    {
+                        labelSettings.Text = "Tình trạng:";
+                        labelSettings.ControlStyle.CssClass = "label";
+                    }
+                )
+                .Render();
+                Html.DevExpress().ComboBox(textBoxSettings =>
+                {
+                    textBoxSettings.Name = "Matinhtrang";
+                    textBoxSettings.ControlStyle.CssClass = "editor";
+                    textBoxSettings.Properties.ValueField = "Matinhtrang";
+                    textBoxSettings.Properties.TextField = "Tentinhtrang";
+                    textBoxSettings.Properties.ValueType = typeof(string);
+                }
+                ).BindList(CCDCDataProvider.DMTinhtrangs())
+                .Bind(DataBinder.Eval(tram, "Matinhtrang"))
+                .Render();
+            ViewContext.Writer.Write("</div>");
+             /*Ghichu*/
+            ViewContext.Writer.Write("<div class='line2'>");
+                Html.DevExpress().Label(
+                    labelSettings =>
+                    {
+                    labelSettings.Text = "Ghi chú:";
+                    labelSettings.ControlStyle.CssClass = "label";
+                    }
+                )
+                .Render();
+                Html.DevExpress().Memo(textBoxSettings =>
+                {
+                    textBoxSettings.Name = "Ghichu";
+                    textBoxSettings.ControlStyle.CssClass = "label";
+                    textBoxSettings.Width = 400;
+                    }
+                )
+                .Bind(DataBinder.Eval(tram, "Ghichu"))
+                .Render();
+                ViewContext.Writer.Write("</div>");
+             
+              ViewContext.Writer.Write("<div class='line3'>");
+                ViewContext.Writer.Write("<div style=\"overflow: hidden\"><div style=\"padding: 3px 0px 15px 17px; float right;\">");
+                        Html.DevExpress().Button(
+                        btnSettings =>
+                        {
+                            btnSettings.Name = "btnUpdategridViewCTChungTuNhap";
+                            btnSettings.ControlStyle.CssClass = "button";
+                            btnSettings.Text = "Cập nhật";
+                            //   btnSettings.Images.Image.Url = "~/Content/Images/accepted_48.png";
+                            btnSettings.ImagePosition = ImagePosition.Left;
+                            btnSettings.ClientSideEvents.Click = "function(s, e){ gridViewCTChungTuNhap.UpdateEdit(); }";
+                        }
+                        ).Render();
+                        Html.DevExpress().Button(
+                            btnSettings =>
+                            {
+                                btnSettings.Name = "btnCancelgridViewCTChungTuNhap";
+                                btnSettings.ControlStyle.CssClass = "button";
+                                btnSettings.Text = "Hủy";
+                            //  btnSettings.Images.Image.Url = "~/Content/Images/accepted_48.png";
+                            btnSettings.ImagePosition = ImagePosition.Left;
+                            btnSettings.ClientSideEvents.Click = "function(s, e){ gridViewCTChungTuNhap.CancelEdit(); }";
+                        }
+                        ).Render();
+                        ViewContext.Writer.Write("</div></div>");
+        ViewContext.Writer.Write("</div>");
+             /*end*/
+             ViewContext.Writer.Write("</div>");
+
+         });
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

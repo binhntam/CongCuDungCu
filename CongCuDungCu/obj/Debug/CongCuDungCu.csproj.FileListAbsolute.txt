@@ -1,0 +1,288 @@
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.dll.config
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.pdb
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Charts.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.CodeParser.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Data.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Office.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.PivotGrid.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Printing.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.RichEdit.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Sparkline.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.SpellChecker.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Utils.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxHtmlEditor.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxThemes.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxTreeList.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.Mvc5.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraCharts.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraCharts.v13.2.Web.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraGauges.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraGauges.v13.2.Presets.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraPivotGrid.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.Web.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraScheduler.v13.2.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.AspNet.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.Core.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\EntityFramework.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\EntityFramework.SqlServer.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.Infrastructure.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\Newtonsoft.Json.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Net.Http.Formatting.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Helpers.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.WebHost.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Mvc.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Razor.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Deployment.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Razor.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\WebMatrix.Data.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\WebMatrix.WebData.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Data.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Office.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.PivotGrid.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Printing.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.RichEdit.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Sparkline.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.SpellChecker.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Utils.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxHtmlEditor.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxTreeList.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraCharts.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraCharts.v13.2.Web.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraGauges.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraPivotGrid.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.Web.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraScheduler.v13.2.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.AspNet.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.Core.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\EntityFramework.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\EntityFramework.SqlServer.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\Newtonsoft.Json.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Net.Http.Formatting.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Helpers.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.WebHost.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Mvc.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.Razor.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Deployment.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Razor.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\WebMatrix.Data.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\WebMatrix.WebData.xml
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Data.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Data.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Data.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Data.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Office.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Office.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Office.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Office.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.PivotGrid.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.PivotGrid.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.PivotGrid.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.PivotGrid.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Printing.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Printing.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Printing.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Printing.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.RichEdit.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.RichEdit.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.RichEdit.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.RichEdit.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Sparkline.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Sparkline.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Utils.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Utils.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Utils.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Utils.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Web.ASPxHtmlEditor.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Web.ASPxHtmlEditor.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Web.ASPxHtmlEditor.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Web.ASPxHtmlEditor.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Web.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Web.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Web.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Web.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraCharts.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraCharts.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraCharts.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraCharts.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraGauges.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraGauges.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraGauges.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraGauges.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraGauges.v13.2.Presets.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraGauges.v13.2.Presets.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraGauges.v13.2.Presets.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraGauges.v13.2.Presets.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraReports.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraReports.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraReports.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraReports.v13.2.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraScheduler.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraScheduler.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraScheduler.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraScheduler.v13.2.Core.resources.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.csprojResolveAssemblyReference.cache
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpNhapKho1Phieu.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpDonViCo.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpTonKho.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpMuaMoi.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpDonViDuocCap.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpThuHoi.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpXuatKho.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpNhapKho.resources
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.csproj.GenerateResource.Cache
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.dll.licenses
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.dll
+E:\5.PHAN MEM\1.PHAN MEM CONG TY\1.CAC PHAN MEM\11.QLCCDC\5.Source code\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.pdb
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.dll.config
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\PhuongTienDo.pdb
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Charts.v13.2.Core.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.CodeParser.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Data.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Office.v13.2.Core.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Printing.v13.2.Core.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Utils.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxThemes.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxTreeList.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.Mvc5.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraPivotGrid.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.Web.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.AspNet.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.Core.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\EntityFramework.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\EntityFramework.SqlServer.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.Infrastructure.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\Newtonsoft.Json.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Net.Http.Formatting.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Helpers.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.WebHost.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Mvc.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Razor.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Deployment.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Razor.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\WebMatrix.Data.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\WebMatrix.WebData.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Data.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Office.v13.2.Core.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Printing.v13.2.Core.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Utils.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.ASPxTreeList.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.Web.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraPivotGrid.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DevExpress.XtraReports.v13.2.Web.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.AspNet.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.Core.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\EntityFramework.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\EntityFramework.SqlServer.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\Newtonsoft.Json.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Net.Http.Formatting.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Helpers.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Http.WebHost.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Mvc.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.Razor.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Deployment.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\System.Web.WebPages.Razor.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\WebMatrix.Data.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\WebMatrix.WebData.xml
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Data.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Data.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Data.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Data.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Office.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Office.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Office.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Office.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Printing.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Printing.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Printing.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Printing.v13.2.Core.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Utils.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Utils.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Utils.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Utils.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Web.ASPxTreeList.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.Web.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.Web.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.Web.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.Web.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraPivotGrid.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraReports.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraReports.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraReports.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraReports.v13.2.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\de\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\es\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ja\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\bin\ru\DevExpress.XtraReports.v13.2.Web.resources.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpCacDonViCo.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpNhapKho1Phieu.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpDonViCo.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpTonKho.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpMuaMoi.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpDonViDuocCap.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpThuHoi.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpXuatKho.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpNhapKho.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.csproj.GenerateResource.Cache
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.dll.licenses
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.dll
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\PhuongTienDo.pdb
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.csprojResolveAssemblyReference.cache
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpBieuMau9KK.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpXuatKho1Phieu.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpThanhLy1Phieu.resources
+E:\Google Drive\ASP.NET\CongCuDungCu\CongCuDungCu\obj\Debug\CongCuDungCu.Reports.rpThuHoi1Phieu.resources

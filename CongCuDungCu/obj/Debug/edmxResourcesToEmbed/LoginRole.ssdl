@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginRoleModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="idRole" />
+    </Key>
+    <Property Name="idRole" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="128" />
+    <Property Name="RoleDescription" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="idUserRole" />
+    </Key>
+    <Property Name="idUserRole" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="GIDUser" Type="uniqueidentifier" />
+    <Property Name="idRole" Type="int" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="GIDUser" />
+    </Key>
+    <Property Name="GIDUser" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="64" />
+    <Property Name="FullName" Type="nvarchar" MaxLength="128" />
+    <Property Name="Password" Type="nvarchar" MaxLength="128" />
+    <Property Name="LastActivityDate" Type="smalldatetime" />
+    <Property Name="LastLoginDate" Type="smalldatetime" />
+    <Property Name="LastPasswordChangedDate" Type="smalldatetime" />
+    <Property Name="CreationDate" Type="smalldatetime" />
+    <Property Name="IsOnLine" Type="bit" />
+    <Property Name="IsLockedOut" Type="bit" />
+    <Property Name="LastLockedOutDate" Type="smalldatetime" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" />
+    <Property Name="MaDonVi" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_UserRole_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="idRole" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="idRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="GIDUser" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="GIDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LoginRoleModelStoreContainer">
+    <EntitySet Name="Roles" EntityType="Self.Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Users" EntityType="Self.Users" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_UserRole_Roles" Association="Self.FK_UserRole_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_Users" Association="Self.FK_UserRole_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

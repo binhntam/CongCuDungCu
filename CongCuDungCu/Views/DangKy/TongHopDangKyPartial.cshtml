@@ -1,0 +1,63 @@
+﻿@using CongCuDungCu.Models
+@*@Html.DevExpress().GridView(
+    settings => {
+        settings.Name = "gridView";
+        settings.KeyFieldName = "idDangKy";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.CallbackRouteValues = new { Controller = "DangKy", Action = "TongHopDangKyPartial" };
+       
+        settings.Columns.Add(column =>
+        {    
+            column.Caption = "Chủng loại và số serial của thiết bị";
+            column.FieldName = "TenVTTB";
+            column.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.Caption = "Cấp chính xác";
+            column.FieldName = "CapChinhXac";
+            column.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        }); 
+        settings.Columns.Add(column =>
+        {
+            column.Caption = "Đơn vị đăng ký";
+            column.FieldName = "TenDonVi";
+            column.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+       
+        settings.Columns.Add(column => {
+            column.FieldName = "SoLuong";
+            column.Caption = "Số lượng";
+            column.ColumnType = MVCxGridViewColumnType.SpinEdit;
+            var spinEditProperties = column.PropertiesEdit as SpinEditProperties;
+            spinEditProperties.NumberType = SpinEditNumberType.Integer;
+            spinEditProperties.MinValue = 0;
+            spinEditProperties.MaxValue = 10000;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "NgayDangKy";
+            column.Caption = "Ngày đăng ký";
+            column.ColumnType = MVCxGridViewColumnType.DateEdit;
+            
+            var dateEditProperties = column.PropertiesEdit as DateEditProperties;
+            dateEditProperties.UseMaskBehavior = true;
+            dateEditProperties.EditFormat=EditFormat.Custom;
+            dateEditProperties.EditFormatString="dd/MM/yyyy hh:mm tt";
+            dateEditProperties.TimeSectionProperties.Visible = true;
+            dateEditProperties.TimeSectionProperties.TimeEditProperties.EditFormat = EditFormat.Custom;
+            dateEditProperties.TimeSectionProperties.TimeEditProperties.EditFormatString = "hh:mm tt";
+            dateEditProperties.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        });       
+        settings.Columns.Add(col =>
+        {
+            col.Caption = "Chủng loại và số serial của thiết bị";
+            col.FieldName = "SoNo";
+            col.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+            // col.Width = 240;
+        });   
+
+    }).Bind(Model).GetHtml()*@
+
+@Html.DevExpress().GridView(CongCuDungCu.Controllers.GridViewExportDemoHelper.ExcelDataAwareExportGridViewSettings).Bind(Model).GetHtml()

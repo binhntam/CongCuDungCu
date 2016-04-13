@@ -1,0 +1,333 @@
+﻿<Demos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Demos.xsd">
+  <DemoProduct Key="Integration" Url="MVC" IsRootDemo="true" IsMvc="true" Title="DevExpress Extensions for ASP.NET MVC" NavItemTitle="Over 50 MVC Extensions" SeoTitle="DevExpress Extensions for ASP.NET MVC">
+    <DownloadUrl>
+      http://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx
+    </DownloadUrl>
+
+    <BuyUrl>
+      http://go.devexpress.com/DevExpress_AspDemos_BuyNow.aspx
+    </BuyUrl>
+
+    <DocUrl>
+      http://go.devexpress.com/DevExpress_AspDemos_Mvc_Doc.aspx
+    </DocUrl>
+
+
+    <Intro Title="Online Demos" SeoTitle="ASP.NET MVC Extension Demos">
+      <BannerTitle></BannerTitle>
+      <BannerText></BannerText>
+      <BannerImageUrl></BannerImageUrl>
+      <BannerUrl></BannerUrl>
+      <BannerVideoButtonImageUrl></BannerVideoButtonImageUrl>
+      <BannerLinkText></BannerLinkText>
+      <DescriptionTitle></DescriptionTitle>
+      <Description></Description>
+    </Intro>
+  </DemoProduct>
+
+  <DemoProduct Key="GridView" Url="MVCxGridViewDemos" IsMvc="true" Title="Quản lý công cụ dụng cụ" SeoTitle="Quản lý công cụ dụng cụ" NavItemTitle="Quản lý công cụ dụng cụ" OrderIndex="0" IntegrationHighlighted="true">
+    <Keywords>gridview, table, datatable, datagrid, grid</Keywords>
+    <DownloadUrl>
+      http://go.devexpress.com/DevExpressDownload_UniversalTrial.aspx
+    </DownloadUrl>
+
+    <BuyUrl>
+      http://go.devexpress.com/DevExpress_AspDemos_BuyNow.aspx
+    </BuyUrl>
+
+    <DocUrl>
+      http://documentation.devexpress.com/#AspNet/CustomDocument8966
+    </DocUrl>
+
+    <IntegrationImageUrl>~/Content/Grid.png</IntegrationImageUrl>
+    <IntegrationDescription>
+      Unlimited master-detail levels, Web Accessibility support, and unmatched end-user data analysis capabilities
+    </IntegrationDescription>
+
+    <Intro Title="Introduction" SeoTitle="Quản lý công cụ dụng cụ">
+      <BannerTitle>
+        Blazing Fast and Lightweight Data Grid for ASP.NET MVC
+      </BannerTitle>
+      <BannerText>
+        The DevExpress GridView extension for ASP.NET MVC is a feature-complete grid with built-in data editors.
+        With blazing fast data loading, efficient memory footprint, extensive data shaping options and integrated touch support for iOS, Android, and Windows Phone,
+        the grid allows you to deliver elegant and highly functional Outlook inspired end-user experiences with ease - for both desktop and mobile web browsers.
+      </BannerText>
+      <BannerImageUrl>~/Content/VideoBanner.png</BannerImageUrl>
+      <BannerUrl>http://www.youtube.com/watch?v=sPMbo0qMlps</BannerUrl>
+      <DescriptionTitle>
+        Welcome to the online demo site of the ASPxGridView and Editors Suite
+      </DescriptionTitle>
+      <Description>
+        <![CDATA[
+            <p>
+                This website demonstrates some of the many features and capabilities available to you when using our Grid View Extension and data editors library. These features include:
+            </p>
+            ]]>
+      </Description>
+    </Intro>
+
+    <DemoGroup Key="DanhSach" Title="Danh mục" IsUpdated="true">
+      <Keywords>crud, dataedit</Keywords>
+       <Demo Key="DMCCDC" Title="Danh mục CCDC" SeoTitle="Danh mục CCDC" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+
+      </Demo>
+
+      
+      <!--<Demo Key="DanhMucKhac" Title="Danh mục khác" SeoTitle="Danh mục khác" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+      <Demo Key="DMNoiSX" Title="DMNoiSX" SeoTitle="DMNoiSX" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>
+      <Demo Key="DMNhaCungCap" Title="DMNhaCungCap" SeoTitle="DMNhaCungCap" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>
+      <!--<Demo Key="DMDonViQL" Title="DMDonViQL" SeoTitle="DMDonViQL" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+      <Demo Key="DMDonVi" Title="Danh mục đơn vị" SeoTitle="Danh mục đơn vị" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>
+      <!--<Demo Key="DMLoaiphieu" Title="DMLoaiphieu" SeoTitle="DMLoaiphieu" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+      <!--<Demo Key="DMKho" Title="DMKho" SeoTitle="DMKho" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+      <Demo Key="DMTinhtrang" Title="DMTinhtrang" SeoTitle="DMTinhtrang" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>
+      <!--<Demo Key="DMNguoidung" Title="DMNguoidung" SeoTitle="DMNguoidung" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+     <Demo Key="DMDvt" Title="DMDvt" SeoTitle="DMDvt" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>
+      <!--<Demo Key="DMNhomnguoidung" Title="DMNhomnguoidung" SeoTitle="DMNhomnguoidung" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+      <!--<Demo Key="DMbaocao" Title="DMbaocao" SeoTitle="DMbaocao" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Cập nhật danh sách công cụ dụng cụ.</p>               
+            ]]>
+        </Description>
+      </Demo>-->
+    </DemoGroup>
+    
+    <DemoGroup Key="NhapDuLieu" Title="Cập nhật chứng từ" IsUpdated="true">
+      <Keywords>crud, dataedit</Keywords>
+
+      <Demo Key="PhieuNhapKho" Title="Nhập mới vào kho" SeoTitle="Nhập mới vào kho" IsNew="true">
+        <Description>
+          <![CDATA[
+               
+            ]]>
+        </Description>      
+      </Demo>
+    <Demo Key="PhieuXuatKho" Title="Xuất cho các đơn vị" SeoTitle="Xuất cho các đơn vị" IsNew="true">
+        <Description>
+          <![CDATA[
+               
+            ]]>
+        </Description>      
+      </Demo>      
+     <Demo Key="PhieuThanhLy" Title="Thanh lý" SeoTitle="Thanh lý" IsNew="true">
+        <Description>
+          <![CDATA[
+               
+            ]]>
+        </Description>      
+      </Demo>
+     <Demo Key="PhieuThuHoi" Title="Thu hồi" SeoTitle="Thu hồi" IsNew="true">
+        <Description>
+          <![CDATA[
+               
+            ]]>
+        </Description>      
+      </Demo>   
+    
+    </DemoGroup>
+    <DemoGroup Key="Report" Title="Báo cáo - thống kê" IsUpdated="true">
+      <Keywords>crud, dataedit</Keywords>
+
+      <Demo Key="rpNhapKho" Title="CCDC nhập kho (mua mới + thu hồi)" SeoTitle="CCDC nhập kho" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>      
+      </Demo>
+      <Demo Key="rpXuatKho" Title="CCDC xuất kho" SeoTitle="CCDC xuất kho" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>       
+      </Demo>
+     <Demo Key="rpThuHoi" Title="CCDC thu hồi" SeoTitle="CCDC thu hồi" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>       
+      </Demo>
+    <Demo Key="rpDonViDuocCap" Title="CCDC đã xuất cho đơn vị" SeoTitle="CCDC đã xuất cho đơn vị" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>       
+      </Demo>
+      <Demo Key="rpMuaMoi" Title="CCDC mua mới" SeoTitle="CCDC mua mới" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>
+      </Demo>
+      <Demo Key="rpTonKho" Title="CCDC tồn kho (mới + thu - xuất)" SeoTitle="CCDC tồn kho" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>
+      </Demo>
+      <Demo Key="rpDonViCo" Title="CCDC đơn vị đang sử dụng" SeoTitle="CCDC đơn vị đang sử dụng" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>
+      </Demo>
+      <Demo Key="rpCacDonViCo" Title="CCDC các đơn vị đang sử dụng" SeoTitle="CCDC các vị đang sử dụng" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>
+      </Demo>
+     <Demo Key="rpNhapKho1Phieu" Title="CCDC nhập CTu mới" SeoTitle="CCDC nhập CTu mới" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>      
+      </Demo>
+       <Demo Key="rpXuatKho1Phieu" Title="CCDC xuất CTu mới" SeoTitle="CCDC xuất CTu mới" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>      
+      </Demo>
+      <Demo Key="rpBieuMau9KK" Title="Báo cáo theo BM 9/KK" SeoTitle="Báo cáo theo BM 9/KK" IsNew="true">
+        <Description>
+          <![CDATA[                
+              ]]>
+        </Description>
+      </Demo>
+    </DemoGroup>
+
+    <DemoGroup Key="Account" Title="Thông tin" IsUpdated="true">
+      <Keywords>crud, dataedit</Keywords>
+
+      <Demo Key="PersonalInfomation" Title="Thông tin cá nhân" SeoTitle="Thông tin cá nhân" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Thông tin đăng cá nhân.</p>                
+            ]]>
+        </Description>
+        <SourceFile>~/Models/CCDC.cs</SourceFile>
+        <SourceFile>~/Views/Report/DienLucReportPartial.cshtml</SourceFile>
+        <SourceFile>~/Views/DangKy/DienLucReport.cshtml</SourceFile>
+      </Demo>
+      <Demo Key="ChangePassword" Title="Thay đổi mật khẩu" SeoTitle="Thay đổi mật khẩu" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Thay đổi mật khẩu.</p>               
+            ]]>
+        </Description>
+        <SourceFile>~/Models/CCDC.cs</SourceFile>
+        <SourceFile>~/Views/Account/ChangePasswordPartial.cshtml</SourceFile>
+        <SourceFile>~/Views/Account/ChangePassword.cshtml</SourceFile>
+      </Demo>
+      <Demo Key="ChangePasswordSuccess" Title="ChangePasswordSuccess" SeoTitle="ChangePasswordSuccess" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Thay đổi mật khẩu.</p>               
+            ]]>
+        </Description>
+        <SourceFile>~/Models/CCDC.cs</SourceFile>
+        <SourceFile>~/Views/Account/ChangePasswordPartial.cshtml</SourceFile>
+        <SourceFile>~/Views/Account/ChangePassword.cshtml</SourceFile>
+      </Demo>
+      <Demo Key="Sign" Title="Chữ ký" SeoTitle="Chữ ký" IsNew="true">
+        <Description>
+          <![CDATA[
+                <p>Chữ ký.</p>               
+            ]]>
+        </Description>
+        <SourceFile>~/Models/CCDC.cs</SourceFile>
+        <SourceFile>~/Views/Editing/BatchEditingPartial.cshtml</SourceFile>
+        <SourceFile>~/Views/Editing/BatchEditing.cshtml</SourceFile>
+      </Demo>
+    </DemoGroup>
+  </DemoProduct>
+
+
+  <Search>
+    <Synonyms>
+      <Group>datasource, databinding, binding, database, databind</Group>
+      <Group>grid, gridview, gridviewcontrol, aspxgridview</Group>
+      <Group>eXpress, Persistent, xpo</Group>
+    </Synonyms>
+    <Exclusions>
+      <Words>devexpress, dx, asp, devex, asp.net, demo, demos, web</Words>
+      <Prefixes>aspx, asp, xtra, client, dx, web, mvcx</Prefixes>
+      <Postfixes>s, ing, control, e</Postfixes>
+    </Exclusions>
+  </Search>
+
+  <GlobalHeader LogoPlatformSubject="QUẢN LÝ CCDC" LogoPlatformDescription="CÔNG TY ĐIỆN LỰC NINH THUẬN"/>
+</Demos>

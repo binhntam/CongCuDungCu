@@ -1,0 +1,73 @@
+﻿@model System.Collections.IEnumerable
+@using CongCuDungCu.Controllers
+
+@Html.DevExpress().Menu(settings =>
+{
+    settings.Name = "mOverview";
+    settings.ShowPopOutImages = DefaultBoolean.True;
+    settings.EnableHotTrack = true;
+    settings.AllowSelectItem = true;
+    
+    settings.Items.Add(item =>
+    {
+        item.Text = "Danh mục khác";
+        item.Items.Add(subItem =>
+                {
+                    subItem.Text = "Danh mục nơi sản xuất";
+                    subItem.NavigateUrl = DanhSachController_Helper.getDMNoiSX();
+                });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục nhà cung cấp";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMNhaCungCap();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục đơn vị quản lý";
+            subItem.NavigateUrl = DanhSachController_Helper.getDonViQL();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục đơn vị";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMDonVi();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục getDMLoaiphieu";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMLoaiphieu();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục DMKho";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMKho();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục DMTinhtrang";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMTinhtrang();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục getDMLoaiphieu";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMNguoidung();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục DMNhomnguoidung";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMNhomnguoidung();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục DMDvt";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMDvt();
+        });
+        item.Items.Add(subItem =>
+        {
+            subItem.Text = "Danh mục DMbaocao";
+            subItem.NavigateUrl = DanhSachController_Helper.getDMbaocao();
+        });
+       
+    });
+   
+    // And other items
+}).GetHtml()

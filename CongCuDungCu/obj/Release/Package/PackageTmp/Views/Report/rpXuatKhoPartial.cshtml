@@ -1,0 +1,42 @@
+﻿@Html.DevExpress().DocumentViewer(
+    settings =>
+    {
+        settings.Name = "DocumentViewer";
+        settings.Report = (CongCuDungCu.Reports.rpXuatKho)ViewData["Report"];
+        settings.ToolbarItems.Clear();
+        ReportToolbarComboBox saveFormat = new ReportToolbarComboBox() { ItemKind = ReportToolbarItemKind.SaveFormat, Width = new System.Web.UI.WebControls.Unit(70, System.Web.UI.WebControls.UnitType.Pixel) };
+        saveFormat.Elements.AddRange(new ListElement[]
+                        {
+                             new ListElement { Value = "pdf", Text = "Pdf"},
+                           new ListElement { Value = "xls", Text = "Xls"},
+
+                        });
+        settings.ToolbarItems.AddRange(new ReportToolbarItem[]
+        {
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.Search, ToolTip="Tìm kiếm" },
+            new ReportToolbarSeparator(),
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.PrintReport,ToolTip="In báo cáo" },
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.PrintPage, ToolTip="In trang hiện tại" },
+            new ReportToolbarSeparator(),
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.FirstPage },
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.PreviousPage },
+            new ReportToolbarLabel { ItemKind = ReportToolbarItemKind.PageLabel },
+            new ReportToolbarComboBox { ItemKind = ReportToolbarItemKind.PageNumber,
+                Width = new System.Web.UI.WebControls.Unit(65, System.Web.UI.WebControls.UnitType.Pixel) },
+            new ReportToolbarLabel { ItemKind = ReportToolbarItemKind.OfLabel },
+            new ReportToolbarTextBox() { ItemKind = ReportToolbarItemKind.PageCount },
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.NextPage },
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.LastPage },
+            new ReportToolbarSeparator(),
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.SaveToDisk, ToolTip="Xuất báo cáo" },
+            new ReportToolbarButton { ItemKind = ReportToolbarItemKind.SaveToWindow },
+            saveFormat,
+            new ReportToolbarSeparator(),
+            });
+
+        settings.Width = System.Web.UI.WebControls.Unit.Pixel(920);
+        //  settings.StylesSplitter.RightPaneWidth = System.Web.UI.WebControls.Unit.Pixel(290);
+       
+        settings.CallbackRouteValues = new { Controller = "Report", Action = "rpXuatKhoPartial" };
+        settings.ExportRouteValues = new { Controller = "Report", Action = "DocumentViewerExportToXuatKho" };
+    }).GetHtml()

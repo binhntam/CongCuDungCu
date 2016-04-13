@@ -1,0 +1,39 @@
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+@using CongCuDungCu.Controllers;
+@using CongCuDungCu.Models
+@Html.DevExpress().GridView(
+    settings =>
+    {
+        settings.Name = "gridView";
+        settings.KeyFieldName = "idKyTen";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        settings.CallbackRouteValues = new { Controller = "Account", Action = "Sign" };
+        settings.SettingsEditing.BatchUpdateRouteValues = new { Controller = "Account", Action = "SignUpdateModel" };
+
+        settings.SettingsEditing.Mode = GridViewEditingMode.Batch;
+        settings.SettingsEditing.BatchEditSettings.EditMode = GridViewBatchEditMode.Cell;
+        settings.SettingsEditing.BatchEditSettings.StartEditAction = GridViewBatchStartEditAction.DblClick;
+
+        settings.CommandColumn.Visible = true;         
+        settings.CommandColumn.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+     
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "NguoiLapBieu";
+            column.Caption = "Người lập biểu";
+
+        });
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "TrgDonVi_Ky";
+            col.Caption = "Trưởng đơn vị ký";
+
+        });
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "GDocCty_Ky";
+            col.Caption = "GĐ Công ty ký";
+
+        });     
+        
+    }).Bind(Model).GetHtml()

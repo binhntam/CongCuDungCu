@@ -1,0 +1,114 @@
+﻿        @using CongCuDungCu.Models
+@using DevExpress.Web.ASPxEditors
+        @{
+            var grid = Html.DevExpress().GridView(
+            settings =>
+            {
+                settings.Name = "gridViewXuat";
+                settings.KeyFieldName = "STTCT";
+        
+                settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+                settings.Settings.ShowFilterRow = true;
+                settings.Settings.ShowFilterRowMenu = true;
+                settings.CommandColumn.Visible = true;
+                settings.CommandColumn.ShowClearFilterButton = true;
+                settings.CallbackRouteValues = new { Controller = "NhapDuLieu", Action = "PhieuXuatKhoPartial" };
+     
+                settings.CommandColumn.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+                settings.Styles.Header.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+                settings.Styles.Header.Font.Bold = true;
+                  //set odd&even
+                settings.Styles.AlternatingRow.Enabled = DefaultBoolean.True;
+                settings.Styles.AlternatingRow.BackColor = System.Drawing.Color.FromArgb(240, 240, 255);
+                /**/
+                settings.Columns.Add(column =>
+                {
+                    column.Caption = "";
+                    column.Width = 80;
+                    column.SetDataItemTemplateContent(c =>
+                    {
+                        ViewContext.Writer.Write(
+                            Html.ActionLink("Cập nhật", "FormEdit_PhieuXuatKho", new { STTCT = DataBinder.Eval(c.DataItem, "STTCT") }) + "&nbsp;" +
+                            Html.ActionLink("Xóa", "FormDelete_PhieuXuatKho", new { STTCT = DataBinder.Eval(c.DataItem, "STTCT") },
+                                new { onclick = "return confirm('Do you really want to delete this record?')" })
+                        );
+                    });
+                    column.SetHeaderTemplateContent(c =>
+                    {
+                        ViewContext.Writer.Write(
+                            Html.ActionLink("Thêm mới", "FormEdit_PhieuXuatKho", new { STTCT = -1 }).ToHtmlString()
+                        );
+                    });
+                    column.Settings.AllowDragDrop = DefaultBoolean.False;
+                    column.Settings.AllowSort = DefaultBoolean.False;
+                   // column.Width = 70;
+                });
+                /**/
+                settings.Columns.Add(col =>
+                {
+                    col.FieldName = "STTCT";
+                    col.Caption = "STTCT";
+                    col.Visible = false;
+                    col.Width = 25;
+                });
+                settings.Columns.Add(col =>
+                {
+                    col.FieldName = "SoCT";
+                    col.Caption = "Số C.Từ";
+                    col.CellStyle.BackColor = System.Drawing.Color.FromName("#ffffd6");  //màu vàng
+                    col.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+                    col.Width = 85;
+                });
+                settings.Columns.Add(column =>
+                {
+                    column.FieldName = "Ngayvietphieu";
+                    column.Caption = "Ngày viết phiếu";
+                    column.Width = 120;
+                    column.ColumnType = MVCxGridViewColumnType.DateEdit;
+                    column.CellStyle.BackColor = System.Drawing.Color.FromName("#CCFFCC");  //màu xanh
+                    column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+                    var dateEditProperties = column.PropertiesEdit as DateEditProperties;
+                    dateEditProperties.UseMaskBehavior = true;
+                    dateEditProperties.EditFormat = EditFormat.Custom;
+                    dateEditProperties.EditFormatString = "dd/MM/yyyy";
+                    dateEditProperties.DisplayFormatString = "dd/MM/yyyy";           
+                    dateEditProperties.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        
+                });               
+                settings.Columns.Add(col =>
+                {
+                    col.FieldName = "Lydo";
+                    col.Caption = "Lý do";
+                 //   col.Width = 260;
+                });
+                settings.Columns.Add(col =>
+                {
+                    col.FieldName = "Tu";
+                    col.Caption = "Từ";
+                    col.Width = 160;
+                });
+                settings.Columns.Add(col =>
+                {
+                    col.FieldName = "Den";
+                    col.Caption = "Đến";
+                    col.Width = 180;
+                });
+                //phân trang
+                settings.SettingsPager.Position = System.Web.UI.WebControls.PagerPosition.Bottom;
+                settings.SettingsPager.FirstPageButton.Visible = true;
+                settings.SettingsPager.LastPageButton.Visible = true;
+                settings.SettingsPager.PageSize = 24;
+                //lọc header
+                settings.Settings.ShowFilterRow = true;
+                settings.Settings.ShowFilterRowMenu = true;
+                settings.CommandColumn.Visible = true;                
+                settings.CommandColumn.ShowClearFilterButton = true;
+                //SUMMARY
+                settings.Settings.ShowFooter = true;
+                settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Count, "SoCT").DisplayFormat = "Tổng: {0:0,0}";       
+      
+       
+            });
+  
+        }
+         @grid.Bind(Model).GetHtml()

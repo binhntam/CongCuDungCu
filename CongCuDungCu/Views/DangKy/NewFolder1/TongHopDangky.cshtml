@@ -1,0 +1,8 @@
+﻿@model System.Collections.IEnumerable
+     
+
+@using (Html.BeginForm("ExcelDataAwareExportTo", "Dangky"))
+{
+   @*@Html.Partial("ExcelDataAwareOptionsPartial", Model)*@
+    @Html.Partial("TongHopDangKyPartial", Model)
+}

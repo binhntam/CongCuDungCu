@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LoginRoleModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="idRole" />
+    </Key>
+    <Property Name="idRole" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="RoleDescription" Type="String" MaxLength="256" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_UserRole_Roles" FromRole="Roles" ToRole="UserRole" />
+  </EntityType>
+  <EntityType Name="UserRole">
+    <Key>
+      <PropertyRef Name="idUserRole" />
+    </Key>
+    <Property Name="idUserRole" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="GIDUser" Type="Guid" />
+    <Property Name="idRole" Type="Int32" />
+    <NavigationProperty Name="Roles" Relationship="Self.FK_UserRole_Roles" FromRole="UserRole" ToRole="Roles" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_UserRole_Users" FromRole="UserRole" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="GIDUser" />
+    </Key>
+    <Property Name="GIDUser" Type="Guid" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="64" FixedLength="false" Unicode="true" />
+    <Property Name="FullName" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="128" FixedLength="false" Unicode="true" />
+    <Property Name="LastActivityDate" Type="DateTime" Precision="0" />
+    <Property Name="LastLoginDate" Type="DateTime" Precision="0" />
+    <Property Name="LastPasswordChangedDate" Type="DateTime" Precision="0" />
+    <Property Name="CreationDate" Type="DateTime" Precision="0" />
+    <Property Name="IsOnLine" Type="Boolean" />
+    <Property Name="IsLockedOut" Type="Boolean" />
+    <Property Name="LastLockedOutDate" Type="DateTime" Precision="0" />
+    <Property Name="FailedPasswordAttemptCount" Type="Int32" />
+    <NavigationProperty Name="UserRole" Relationship="Self.FK_UserRole_Users" FromRole="Users" ToRole="UserRole" />
+    <Property Name="MaDonVi" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <Association Name="FK_UserRole_Roles">
+    <End Role="Roles" Type="Self.Roles" Multiplicity="0..1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="idRole" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="idRole" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserRole_Users">
+    <End Role="Users" Type="Self.Users" Multiplicity="0..1" />
+    <End Role="UserRole" Type="Self.UserRole" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="GIDUser" />
+      </Principal>
+      <Dependent Role="UserRole">
+        <PropertyRef Name="GIDUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LoginRoleEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Roles" EntityType="Self.Roles" />
+    <EntitySet Name="UserRole" EntityType="Self.UserRole" />
+    <EntitySet Name="Users" EntityType="Self.Users" />
+    <AssociationSet Name="FK_UserRole_Roles" Association="Self.FK_UserRole_Roles">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserRole_Users" Association="Self.FK_UserRole_Users">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="UserRole" EntitySet="UserRole" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

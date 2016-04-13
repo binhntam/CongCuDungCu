@@ -1,0 +1,62 @@
+﻿@model CongCuDungCu.Controllers.Chart_Helper
+@using DevExpress.Web.ASPxEditors
+@{
+    CongCuDungCu.Controllers.Chart_Helper.ChartViewTypeDemoOptions options = (CongCuDungCu.Controllers.Chart_Helper.ChartViewTypeDemoOptions)ViewData[CongCuDungCu.Controllers.Chart_Helper.OptionsKey];
+    var tram = ViewData[CongCuDungCu.Controllers.Chart_Helper.OptionsKey];
+    ViewContext.Writer.Write("<div class='reportOptionsPanel' style='height:43px'>");
+    ViewContext.Writer.Write("<div style='padding-bottom: 4px;  float: left; clear: right; vertical-align:baseline; height: 25px;'>");
+        ViewContext.Writer.Write("<div style='width:145px; float: left; margin-top:3px'>");
+        Html.DevExpress().Label(
+              labelSettings =>
+              {
+                  labelSettings.Text = "Chọn đơn vị sử dụng";
+              })
+              .Render();
+        ViewContext.Writer.Write("</div>");
+        /**/
+        ViewContext.Writer.Write("<div style='margin:0px; float: left; width: 151px; height: 21px;'>");
+
+        Html.DevExpress().ComboBox(
+            settings =>
+            {
+                settings.Name = "Tendonvi";
+                settings.SelectedIndex = 0;
+                settings.ControlStyle.CssClass = "editor";
+                settings.Properties.TextField = "Tendonvi";
+                settings.Properties.ValueField = "Madonvi";
+                settings.Properties.ValueType = typeof(string);
+                settings.Properties.DropDownWidth = 270;
+                settings.Properties.DropDownHeight = 360;
+                settings.Properties.TextFormatString = "{1}";
+                settings.Properties.DropDownStyle = DevExpress.Web.ASPxEditors.DropDownStyle.DropDownList;
+                settings.Properties.IncrementalFilteringMode = IncrementalFilteringMode.StartsWith;
+                settings.Width = 270;
+              
+                settings.Properties.Columns.Add("Madonvi", "Madonvi", 95);
+                settings.Properties.Columns.Add("Tendonvi", "Tendonvi", 185);
+               
+            }
+            ).BindList(CongCuDungCu.Models.CCDCDataProvider.DMDonViByUsers(@User.Identity.Name)).Bind(DataBinder.Eval(tram, "Tendonvi"))
+            .Render();
+        ViewContext.Writer.Write("</div>");
+        ViewContext.Writer.Write("</br>");
+        ViewContext.Writer.Write("</br>");
+        /**/
+        ViewContext.Writer.Write("<div style='float: right;'>");
+        Html.DevExpress().Button(
+           settings =>
+           {
+               settings.Name = "btnUpdateTime";
+               settings.Text = "Kết quả";
+               settings.UseSubmitBehavior = true;
+           }
+           )
+           .Render();
+        ViewContext.Writer.Write("</div>");
+    ViewContext.Writer.Write("</div>");
+    ViewContext.Writer.Write("</div>");
+}
+    
+
+
+    

@@ -1,0 +1,19 @@
+﻿
+@using CongCuDungCu.Controllers
+
+@Html.DevExpress().Menu(settings =>
+{
+    settings.Name = "mOverview";
+    settings.ShowPopOutImages = DefaultBoolean.True;
+    settings.EnableHotTrack = true;
+    settings.AllowSelectItem = true;
+
+    settings.Items.Add(item =>
+    {
+        item.Text = "In Phiếu";
+        item.NavigateUrl = NhapDuLieuController_Helper.rpNhapKho1Phieu();
+
+    });
+
+    // And other items
+}).GetHtml()

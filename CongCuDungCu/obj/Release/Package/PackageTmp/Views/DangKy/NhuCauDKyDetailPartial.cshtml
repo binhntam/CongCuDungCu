@@ -1,0 +1,67 @@
+﻿@using CongCuDungCu.Models
+@Html.DevExpress().GridView(
+    settings => {
+        settings.Name = "gridViewDetail";
+        settings.KeyFieldName = "idDangKy";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(45);
+        settings.CallbackRouteValues = new
+        {
+            Controller = "DangKy",
+            Action = "NhuCauDKyDetailPartial", 
+            //Phải trở về đúng giá trị GuidID cho việc edit detail
+            idPhanBo = ViewData["idPhanBo"]
+        };
+        settings.SettingsEditing.BatchUpdateRouteValues = new { Controller = "DangKy", Action = "DangKyEditingUpdateModel", idPhanBo = ViewData["idPhanBo"] };
+        
+        settings.SettingsEditing.Mode = GridViewEditingMode.Batch;
+        settings.SettingsEditing.BatchEditSettings.EditMode = GridViewBatchEditMode.Cell;
+        settings.SettingsEditing.BatchEditSettings.StartEditAction = GridViewBatchStartEditAction.DblClick;
+        
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowDeleteButton = true;
+        settings.CommandColumn.ShowNewButtonInHeader = true;
+        settings.SettingsCommandButton.DeleteButton.Text = "Xóa";
+        settings.SettingsCommandButton.NewButton.Text = "Đăng ký mới";
+        settings.SettingsBehavior.ConfirmDelete = true;     
+        settings.Styles.Header.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+    //    settings.Columns.Add(column =>
+    //    {
+    //        column.FieldName = "idCCDC";
+    //        column.Caption = "VTTB phương tiện đo";
+
+    //        column.ColumnType = MVCxGridViewColumnType.ComboBox;
+    //        var comboBoxProperties = column.PropertiesEdit as ComboBoxProperties;
+    //        comboBoxProperties.DataSource = CongCuDungCu.Models.CCDCDataProvider.GetCCDCs();
+    //       comboBoxProperties.TextField = "TenVTTB";
+    ////        comboBoxProperties.SelectedIndex = 0;
+    //        comboBoxProperties.DropDownWidth = 550;
+    //        comboBoxProperties.DropDownStyle = DropDownStyle.DropDownList;
+    //        comboBoxProperties.IncrementalFilteringMode = IncrementalFilteringMode.StartsWith;
+    //        comboBoxProperties.TextFormatString = "{0}";
+    //        comboBoxProperties.ValueField = "idCCDC";
+    //        comboBoxProperties.ValueType = typeof(int);
+
+    //        comboBoxProperties.Columns.Add("TenVTTB", "Tên VTTB phương tiện đo", System.Web.UI.WebControls.Unit.Percentage(75));
+    //        comboBoxProperties.Columns.Add("CapChinhXac", "Cấp chính xác", System.Web.UI.WebControls.Unit.Percentage(25));
+          
+    //    });        
+
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "NgayDKy";
+            column.Caption = "Ngày đăng ký";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+            column.ColumnType = MVCxGridViewColumnType.DateEdit;
+            column.Width = 280;
+            var dateEditProperties = column.PropertiesEdit as DateEditProperties;
+            dateEditProperties.UseMaskBehavior = true;
+            dateEditProperties.EditFormat=EditFormat.Custom;
+            dateEditProperties.EditFormatString="dd/MM/yyyy hh:mm tt";
+            dateEditProperties.TimeSectionProperties.Visible = true;
+            dateEditProperties.TimeSectionProperties.TimeEditProperties.EditFormat = EditFormat.Custom;
+            dateEditProperties.TimeSectionProperties.TimeEditProperties.EditFormatString = "hh:mm tt";
+            dateEditProperties.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        });             
+
+    }).Bind(Model).GetHtml()

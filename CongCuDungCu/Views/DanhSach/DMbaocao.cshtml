@@ -1,0 +1,131 @@
+﻿@using CongCuDungCu.Models
+@{
+    var grid = Html.DevExpress().GridView(
+    settings =>
+    {
+        settings.Name = "gvDMbaocaos";
+        settings.KeyFieldName = "Madvt";
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+        //   settings.CallbackRouteValues = new { Controller = "DanhSach", Action = "CCDCMasterPartial" };
+
+        //settings.SettingsEditing.UpdateRowRouteValues = new { Controller = "DanhSach", Action = "UpdateMasterPartial" };
+        //settings.SettingsEditing.AddNewRowRouteValues = new { Controller = "DanhSach", Action = "NewMasterPartial" };
+        //settings.SettingsEditing.DeleteRowRouteValues = new { Controller = "DanhSach", Action = "DeleteMasterPartial" };
+        //settings.SettingsEditing.Mode = GridViewEditingMode.EditFormAndDisplayRow;
+        //settings.SettingsPopup.EditForm.Width = 600;
+        //settings.CommandColumn.Visible = true;
+        //settings.CommandColumn.Width = 85;
+        //settings.CommandColumn.ShowEditButton = true;
+        //// settings.CommandColumn.ShowNewButton = true;
+        //settings.CommandColumn.ShowNewButtonInHeader = true;
+        //settings.CommandColumn.ShowDeleteButton = true;
+        //settings.SettingsCommandButton.EditButton.Text = "Xem";
+        //settings.SettingsCommandButton.NewButton.Text = "Thêm mới";
+        //settings.SettingsCommandButton.DeleteButton.Text = "Xóa";
+        //settings.SettingsBehavior.ConfirmDelete = true;
+
+        settings.CommandColumn.HeaderStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        settings.Styles.Header.Font.Bold = true;
+
+        // settings.Styles.GroupRow.Font.Bold = true;
+        settings.Columns.Add(col =>
+        {
+            col.FieldName = "STTBC";
+            col.Caption = "STTBC";
+            // col.CellStyle.Font.Bold = true;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "Madvt";
+            column.Caption = "Madvt";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+
+
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "Ctycon";
+            column.Caption = "Ctycon";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "Ctyme";
+            column.Caption = "Ctyme";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD1D1";
+            column.Caption = "CD1D1";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD1D2";
+            column.Caption = "CD1D2";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD2D1";
+            column.Caption = "CD2D1";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD2D2";
+            column.Caption = "CD2D2";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD3D1";
+            column.Caption = "CD3D1";
+        });
+        //**
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "CD3D2";
+            column.Caption = "CD3D2";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "TenCD1";
+            column.Caption = "TenCD1";
+            column.CellStyle.HorizontalAlign = System.Web.UI.WebControls.HorizontalAlign.Center;
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "TenCD2";
+            column.Caption = "TenCD2";
+        });
+        settings.Columns.Add(column =>
+        {
+            column.FieldName = "TenCD3";
+            column.Caption = "TenCD3";
+        });
+        //phân trang
+        settings.SettingsPager.Position = System.Web.UI.WebControls.PagerPosition.Bottom;
+        settings.SettingsPager.FirstPageButton.Visible = true;
+        settings.SettingsPager.LastPageButton.Visible = true;
+        settings.SettingsPager.PageSize = 18;
+        //lọc header
+        settings.Settings.ShowFilterRow = true;
+        settings.Settings.ShowFilterRowMenu = true;
+        settings.CommandColumn.Visible = true;
+        settings.CommandColumn.ShowClearFilterButton = true;
+        //SUMMARY
+        settings.Settings.ShowFooter = true;
+        settings.TotalSummary.Add(DevExpress.Data.SummaryItemType.Count, "Madvt").DisplayFormat = "Tổng: {0:0,0}";
+
+
+        //settings.PreRender = (sender, e) =>
+        //       {
+        //           ((MVCxGridView)sender).StartEdit(0);
+        //       };
+    });
+    if (ViewData["EditError"] != null)
+    {
+        grid.SetEditErrorText((string)ViewData["EditError"]);
+    }
+}
+@grid.Bind(Model).GetHtml()

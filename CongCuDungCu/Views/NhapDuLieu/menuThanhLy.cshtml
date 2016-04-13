@@ -1,0 +1,15 @@
+﻿
+    @Html.DevExpress().PageControl(
+    settings =>
+    {
+        settings.Name = "pcScrolling_pop";
+
+        settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+
+        settings.ControlStyle.CssClass = "scrolling_Tab";
+        settings.TabPages.Add("Chi tiết CCDC", "Page1").SetContent(() =>
+        {
+            Html.RenderAction("ThanhLyDetailPartial");
+        });
+      
+    }).GetHtml()

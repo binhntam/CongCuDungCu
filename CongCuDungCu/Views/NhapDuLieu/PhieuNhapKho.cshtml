@@ -1,0 +1,13 @@
+﻿@model System.Collections.IEnumerable
+
+@*<script type="text/javascript">
+    function CloseGridLookup() {
+        gridLookup.ConfirmCurrentSelection();
+        gridLookup.HideDropDown();
+    }
+</script>*@
+@using (Html.BeginForm())
+{
+
+    @Html.Partial("PhieuNhapKhoPartial", Model)
+}

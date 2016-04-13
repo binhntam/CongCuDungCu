@@ -1,0 +1,88 @@
+﻿@using CongCuDungCu.Models
+@*@Html.DevExpress().ComboBox(textBoxSettings =>
+                     {
+                         textBoxSettings.Name = "MaCCDC";
+                         textBoxSettings.ControlStyle.CssClass = "editor";
+                         textBoxSettings.Width = 420;
+                         textBoxSettings.SelectedIndex = 0;
+                        
+                         textBoxSettings.Properties.DropDownWidth = 550;
+                         textBoxSettings.Properties.DropDownHeight = 260;
+                         textBoxSettings.CallbackRouteValues = new { Controller = "NhapDuLieu", Action = "MultiColumnComboBoxPartial" };
+                         textBoxSettings.Properties.CallbackPageSize = 20;
+                         textBoxSettings.Properties.IncrementalFilteringMode = IncrementalFilteringMode.StartsWith;
+                         textBoxSettings.Properties.DropDownStyle = DropDownStyle.DropDownList;
+                         textBoxSettings.Properties.TextFormatString = "{1}";
+                         textBoxSettings.Properties.ValueField = "MaCCDC";
+                         textBoxSettings.Properties.ValueType = typeof(string);
+                         textBoxSettings.Properties.Columns.Add("MaCCDC", "Mã CCDC", 60);
+                         textBoxSettings.Properties.Columns.Add("TenCCDC", "Tên CCDC", System.Web.UI.WebControls.Unit.Percentage(100));
+                         textBoxSettings.ControlStyle.ForeColor = System.Drawing.Color.Red;
+                         textBoxSettings.ControlStyle.CssClass = "lineTEST";
+                     }
+          ).BindList(ViewData["CCDCs"]).Bind(Model).GetHtml()*@
+         
+         
+
+
+@Html.DevExpress().GridLookup(
+    Glooksettings =>
+     {
+         // settings.Properties.Caption = "Select tags:";
+         Glooksettings.Name = "TenCCDC";
+         Glooksettings.KeyFieldName = "TenCCDC";
+        Glooksettings.Width = 350;
+         Glooksettings.CommandColumn.Visible = true;
+         Glooksettings.CommandColumn.ShowSelectCheckbox = true;
+         Glooksettings.CommandColumn.Width = 25;
+         Glooksettings.Columns.Add(col =>
+         {
+             col.Caption = "MaCCDC";
+             col.FieldName = "MaCCDC";
+             col.Width = 45;
+         });
+         Glooksettings.Columns.Add(col =>
+         {
+             col.Caption = "TenCCDC";
+             col.FieldName = "TenCCDC";
+             col.Width = 120;
+             col.Settings.AllowAutoFilter = DefaultBoolean.False;
+         });
+         Glooksettings.Properties.SelectionMode = GridLookupSelectionMode.Single;
+         Glooksettings.Properties.TextFormatString = "{1}";
+    
+       //  Glooksettings.Properties.Width = 190;
+         Glooksettings.GridViewProperties.CallbackRouteValues = new { Controller = "NhapDuLieu", Action = "MultiColumnComboBoxPartial"};
+         Glooksettings.GridViewProperties.Settings.ShowFilterRow = true;
+         Glooksettings.GridViewProperties.Settings.ShowStatusBar = GridViewStatusBarMode.Visible;     
+            
+         Glooksettings.GridViewProperties.SettingsPager.Position = System.Web.UI.WebControls.PagerPosition.Bottom;
+         Glooksettings.GridViewProperties.SettingsPager.FirstPageButton.Visible = true;
+         Glooksettings.GridViewProperties.SettingsPager.LastPageButton.Visible = true;
+         Glooksettings.GridViewProperties.SettingsPager.PageSize = 12;
+         Glooksettings.GridViewProperties.SettingsPager.ShowNumericButtons = false;
+
+         Glooksettings.ControlStyle.ForeColor = System.Drawing.Color.Red;
+         Glooksettings.ControlStyle.CssClass = "lineTEST";
+        // Glooksettings.GridViewProperties.SettingsPager.Mode = GridViewPagerMode.EndlessPaging;
+         //Glooksettings.GridViewProperties.SetStatusBarTemplateContent(cb =>
+         //{
+         //    ViewContext.Writer.Write("<div style=\"padding: 2px 8px 2px 0; float: right\">");
+         //    Html.DevExpress().Button(
+         //        btnSettings =>
+         //        {
+         //            btnSettings.Name = "btnClose";
+         //            btnSettings.UseSubmitBehavior = false;
+         //            btnSettings.Text = "Close";
+         //            btnSettings.ClientSideEvents.Click = "CloseGridLookup";
+         //        }
+         //    )
+         //    .Render();
+         //    ViewContext.Writer.Write("</div>");
+         //});
+         Glooksettings.DataBound = (sender, e) =>
+         {
+             var gridLookup = (MVCxGridLookup)sender;
+             gridLookup.GridView.Width = 600;
+         };
+     }).BindList(ViewData["CCDCs"]).Bind(Model).GetHtml()
